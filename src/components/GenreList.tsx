@@ -22,7 +22,10 @@ function GenreList({onSelectGenre}:Props){
                 src={getCroppedUrl(genre.image_background)} 
                 overflow={"hidden"}/>
 
-                <Button fontSize='lg' variant='plain' onClick={()=>onSelectGenre(genre)}>
+                <Button 
+                fontSize='lg' 
+                variant='plain' 
+                onClick={()=>onSelectGenre(genre)}>
                     {genre.name}
                 </Button>
             </HStack>
