@@ -1,10 +1,8 @@
-
 import './App.css'
-import { Button, ButtonGroup, Grid, GridItem} from '@chakra-ui/react'
-import { Show} from '@chakra-ui/react'
+import {Grid, GridItem} from '@chakra-ui/react'
 import Navbar from './components/Navbar'
-import { Axios } from 'axios'
 import GameGrid from './components/GameGrid'
+import GenreList from './components/GenreList'
 
 function App() {
 
@@ -18,7 +16,10 @@ function App() {
           <Navbar></Navbar>
         </GridItem>
 
-        <GridItem area='aside' hideBelow="lg">Aside</GridItem>
+        <GridItem area='aside' hideBelow="lg" >
+          <GenreList/>
+        </GridItem>
+
         <GridItem area='main' >
           <GameGrid></GameGrid>
         </GridItem>
